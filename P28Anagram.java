@@ -1,3 +1,7 @@
+
+// 输入一个字符串，输出字符串的全排列
+
+
 import java.util.Scanner;
 import java.util.Arrays;
 public class P28Anagram{
