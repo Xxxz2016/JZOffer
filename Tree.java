@@ -26,6 +26,10 @@ class Tree{
 		root = null;
 	}
 	
+	public Tree(TreeNode root){
+		this.root = root;
+	}
+	
 	// --------------------------------------------------
 	// 都是插到最底层哦
 	// 二叉搜索树
