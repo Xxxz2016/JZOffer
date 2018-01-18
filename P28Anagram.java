@@ -1,6 +1,7 @@
 
 // 输入一个字符串，输出字符串的全排列
-
+// 输入abc
+// 输出 abc acb bac bca cab cba
 
 import java.util.Scanner;
 
@@ -15,8 +16,8 @@ public class P28Anagram{
 		}else{
 			for(int i=0;i<len;i++){
 				swap(i,len-1);	
-				doAnagram(len-1); 
-				swap(i,len-1);
+				doAnagram(len-1); 		
+				swap(i,len-1);			
 			}
 		}
 	} 
