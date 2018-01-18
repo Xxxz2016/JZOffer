@@ -3,16 +3,15 @@
 
 
 import java.util.Scanner;
-import java.util.Arrays;
+
 public class P28Anagram{
 	
 	private static char[] charArray;
-	private static int length;    
 
 	public static void doAnagram(int len){
 		
 		if(len == 1){
-			System.out.println(Arrays.toString(charArray));     // basecase
+			System.out.println(String.valueOf(charArray));     // basecase
 		}else{
 			for(int i=0;i<len;i++){
 				swap(i,len-1);	
@@ -36,7 +35,7 @@ public class P28Anagram{
 		String s = sc.nextLine();  
 		
 		charArray = new char[100];
-		length = s.length();
+		int length = s.length();
 		charArray = s.toCharArray();
 		
 		doAnagram(length);
